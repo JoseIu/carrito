@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header class="header container" id="header">
+        <div class="header__logo">
+            Components
+        </div>
+
+        <nav class="nav ">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="#" class="nav__link" id="grafica">Graficas</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#" class="nav__link" id="procesador">Procesadores</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart nav__shoop-img" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <p>Mi carrito <span class="nav__amount">0</span></p>
+            </div>
+
+            <!--CARRITO DE COMPRA-->
+            <div class="shopp" id="shopp">
+                <div class="shopp__close" id="shopp-close">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-x-lg toggle-close__icon" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </div>
+        
+                <!---ARTICULOS DEL CARRITO-->
+                <div class="shopp__content" id="shopp-content">
+                    <!-- <article class="shopp-card">
+                        <img src="img/3090.png" alt="grafica 3090" class="shoop-card__img">
+                        <div class="shopp-card__info">
+                            <p class="shopp-card__title">MSI GeForce RTX 3090 Ti GAMING X TRIO 24GB GDDR6X</p>
+                            <p class="shopp-card__mount">Unidades <span>1</span></p>
+                            <p class="shopp-card__prince">1885,32€</p>
+    
+                            <button class="shopp-card__delete">X</button>
+                        </div>
+                    </article> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products container" id="products">
+            <section class="graficas"> 
+                <article class="card">
+                    <img src="img/4090.png" alt="tarjeta grafica asus 3090" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">ASUS TUF Gaming GeForce RTX 4090 OC 24GB GDDR6X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">2.729 <span class="card__price-span">€</span></p>
+                        <button data-id="1" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/3090ti.webp" alt="tarjeta grafica gigabyte 3090" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">Gigabyte GeForce RTX 3090 Gaming OC 24G 24GB GDDR6X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">1.144,25 <span class="card__price-span">€</span></p>
+                        <button data-id="2" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/3090.png" alt="tarjeta grafica msi 3090ti" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">MSI GeForce RTX 3090 Ti GAMING X TRIO 24GB GDDR6X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">1.885,33 <span class="card__price-span">€</span></p>
+                        <button data-id="3" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/3080.png" alt="tarjeta grafica msi 3080" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">MSI GeForce RTX 3080 GAMING Z TRIO LHR 12GB GDDR6X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">1.144,25 <span class="card__price-span">€</span></p>
+                        <button data-id="4" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/3080ti.webp" alt="tarjeta grafica msi 3080ti" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">MSI RTX 3080 Ti GAMING X TRIO 12GB GDDR6X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">1.875,81 <span class="card__price-span">€</span></p>
+                        <button data-id="5" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/3060.png" alt="tarjeta grafica gigabyte3090" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">Gigabyte GeForce RTX 3060 GAMING OC 12GB GDDR6 Rev 2.0</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">465,99 <span class="card__price-span">€</span></p>
+                        <button data-id="6" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+    
+                <!--=============  AMD SECION  ==================-->
+                <article class="card">
+                    <img src="img/rx6800xt.png" alt="tarjeta grafica msi rx6800xt" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB GDDR6</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">1089,90 <span class="card__price-span">€</span></p>
+                        <button data-id="7" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img/rx5600xt.png" alt="tarjeta msi grafica 3090" class="card__img">
+                    <div class="card__subcard">
+                        <h2 class="card__description">Radeon RX 5600 XT GAMING X</h2>
+                        <img src="img/estrellas.png" alt="estrella calificación" class="card__calification">
+                        <p class="card__price">350 <span class="card__price-span">€</span></p>
+                        <button data-id="8" class="card__buttom">Añadir al carrito</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="procesadores">
+
+            </section>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
